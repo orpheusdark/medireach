@@ -3,14 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Healthcare Providers Nearby</title>
+    <title>Book an Appointment</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&callback=initMap" async defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&callback=initAppointmentMap" async defer></script>
 </head>
 <body>
 
-    <h1>Healthcare Providers Nearby</h1>
+    <h1>Book an Appointment with Healthcare Providers</h1>
+
     <div id="map"></div>
+
+    <div id="appointment-form">
+        <h2>Schedule Your Appointment</h2>
+        <label for="provider">Choose a Provider</label>
+        <select id="provider">
+            <option value="central_clinic">Central Clinic</option>
+            <option value="downtown_hospital">Downtown Hospital</option>
+            <option value="health_center_east">Health Center East</option>
+        </select>
+
+        <label for="date">Date</label>
+        <input type="date" id="date" required>
+
+        <label for="time">Time</label>
+        <input type="time" id="time" required>
+
+        <button onclick="bookAppointment()">Book Appointment</button>
+    </div>
 
     <script src="script.js"></script>
 </body>
