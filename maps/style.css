@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    background-color: #ffeb3d;
+    padding: 15px;
+    margin: 0;
+}
+
+#map {
+    width: 100%;
+    height: 90vh;
+}
+
+#appointment-form {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    width: 60%;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+label {
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input[type="date"],
+input[type="time"],
+select,
+button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
